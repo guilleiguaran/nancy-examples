@@ -12,7 +12,7 @@ class App < Nancy::Base
   include Helpers
 
   get '/:name' do
-    @message = greeting params["name"]
-    render "hello.erb"
+    @message = greeting params['name']
+    render 'hello.erb'
   end
 end
